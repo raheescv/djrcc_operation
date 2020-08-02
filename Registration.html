@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRA | Wizards</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style media="screen">
+  .wizard > .content > .body{
+    position: relative;
+  }
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element"> <span>
+              <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+            </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="clear">
+                <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+              </span>
+            </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="logo-element"> ASTRA </div>
+        </li>
+        <li>
+          <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards </span></a>
+        </li>
+        <li class="active">
+          <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Beacon</span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li class="active"><a href="ELTRegistration.html">New ELT Registration</a></li>
+            <li class="active"><a href="PLBRegistration.html">New PLB Registration</a></li>
+            <li class="active"><a href="EPIRBRegistration.html">New EPIRB Registration</a></li>
+            <li><a href="RegistrationList.html">List</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+            <span class="m-r-sm text-muted welcome-message">Welcome to ASTRA Admin Theme.</span>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+              <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+            </a>
+            <ul class="dropdown-menu dropdown-messages">
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="#" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                  </a>
+                  <div class="media-body">
+                    <small class="pull-right">46h ago</small>
+                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="#" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                  </a>
+                  <div class="media-body ">
+                    <small class="pull-right text-navy">5h ago</small>
+                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box">
+                  <a href="#" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                  </a>
+                  <div class="media-body ">
+                    <small class="pull-right">23h ago</small>
+                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                  </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="#">
+                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+              <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts">
+              <li>
+                <a href="#">
+                  <div>
+                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                    <span class="pull-right text-muted small">4 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">
+                  <div>
+                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                    <span class="pull-right text-muted small">12 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="$">
+                  <div>
+                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                    <span class="pull-right text-muted small">4 minutes ago</span>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="#">
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-sign-out"></i> Log out
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper wrapper-content">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ibox">
+            <div class="ibox-title">
+              <h5>Beacon Registration</h5>
+              <div class="ibox-tools">
+                <a class="collapse-link"> <i class="fa fa-chevron-up"></i> </a>
+                <a class="close-link"> <i class="fa fa-times"></i> </a>
+              </div>
+            </div>
+            <div class="ibox-content">
+              <h2> Beacon Registration </h2>
+              <p class="text-right"> * indicates required field </p>
+              <form id="form" action="#" class="wizard-big">
+                <h1>Account Information</h1>
+                <fieldset>
+                  <h2>Account Information</h2>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Beacon Hex ID *</label>
+                          <input id="beacon_hex_id" name="beacon_hex_id" type="text" class="form-control ">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Beacon Type *</label>
+                          <select class="form-control " id="beacon_type" name="beacon_type">
+                            <option value="EPIRB">EPIRB</option>
+                            <option value="APIRB">APIRB</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Country Code</label>
+                          <select class="form-control " id="country_code" name="country_code">
+                            <option value="466">QATAR(466)</option>
+                            <option value="91">INDIA(91)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Password *</label>
+                          <input id="password" name="password" type="text" class="form-control ">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Confirm Password *</label>
+                          <input id="confirm" name="confirm" type="text" class="form-control ">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Security Question</label>
+                          <select class="form-control" id="country_code" name="country_code">
+                            <option value="">What Is the Name Of Your Favorite Movie</option>
+                            <option value="">What Is Your Nick Name</option>
+                            <option value="">What Is Your Mothers Name</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Security Answer</label>
+                          <input id="security_answer" name="security_answer" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Special Status</label>
+                          <select class="form-control" id="country_code" name="country_code">
+                            <option value="">Status 1</option>
+                            <option value="">Status 2</option>
+                            <option value="">Status 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Reason or Comments</label><br>
+                          <textarea name="remarks" rows="8" style="width:100%"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>Owner/Operation Information</h1>
+                <fieldset>
+                  <h2>Owner/Operation Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Name *</label>
+                        <input id="name" name="name" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Address *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>City *</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>State</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Country</label>
+                        <select class="form-control" id="country" name="country">
+                          <option value="">Qatar</option>
+                          <option value="">India</option>
+                          <option value="">US</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Postal Code</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Email Confirm</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Telephone</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Phone No</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>AirCraft Information</h1>
+                <fieldset>
+                  <h2>AirCraft Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vehicle Type *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">Multiple Engin Jet</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>AirCraft Manufacturer</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>AirCraft Color</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>AirCraft Color</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>AirCraft Operating Agency</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Radio Equipment</label>
+                        <select class="form-control " id="vehicle_type" multiple name="beacon_type">
+                          <option value="HF">HF</option>
+                          <option value="MF">MF</option>
+                          <option value="SSB">SSB</option>
+                          <option value="VHF">VHF</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>Vessel Information</h1>
+                <fieldset>
+                  <h2>Vessel Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vehicle Type *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="PowerTug">Power Tug</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vessel Name *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vessel Color</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>No Of Life Boats</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>No Of Life rafts</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Radio Equipment</label>
+                        <select class="form-control " id="vehicle_type" multiple name="beacon_type">
+                          <option value="HF">HF</option>
+                          <option value="MF">MF</option>
+                          <option value="SSB">SSB</option>
+                          <option value="VHF">VHF</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Radio Call Sign</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Radio Cal Sign Decoded</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>INMARSAT</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vessel Cellular</label>
+                        <input id="state" name="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>Vehicle Information</h1>
+                <fieldset>
+                  <h2>Vehicle Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Vehicle Type *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="PowerTug">Boat</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Specific Usage *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="PowerTug">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label>Additional Vehicle/Usage Information</label>
+                        <textarea name="remarks" rows="8" style="width:100%"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>ELT Information</h1>
+                <fieldset>
+                  <h2>ELT Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Manufacturer *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">ACR Electronics</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Model No *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>C-S TYpe Approvel Number</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Activation Method</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">Category 1 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 2 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 3 Automatic or Manual</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Becon Homing Devices</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">SART</option>
+                          <option value="ACRElectronics">Devices 2</option>
+                          <option value="ACRElectronics">Devices 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Additional Beacon Information</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>PLB Information</h1>
+                <fieldset>
+                  <h2>PLB Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Manufacturer *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">ACR Electronics</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Model No *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>C-S TYpe Approvel Number</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Activation Method</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">Category 1 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 2 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 3 Automatic or Manual</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Becon Homing Devices</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">SART</option>
+                          <option value="ACRElectronics">Devices 2</option>
+                          <option value="ACRElectronics">Devices 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Additional Beacon Information</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>EPIRB Information</h1>
+                <fieldset>
+                  <h2>EPIRB Information</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Manufacturer *</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">ACR Electronics</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Model No *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>C-S TYpe Approvel Number</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Activation Method</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">Category 1 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 2 Automatic or Manual</option>
+                          <option value="ACRElectronics">Category 3 Automatic or Manual</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Becon Homing Devices</label>
+                        <select class="form-control " id="vehicle_type" name="beacon_type">
+                          <option value="ACRElectronics">SART</option>
+                          <option value="ACRElectronics">Devices 2</option>
+                          <option value="ACRElectronics">Devices 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Additional Beacon Information</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <h1>24 Hour Emergency Contact Information</h1>
+                <fieldset>
+                  <h2>24 Hour Emergency Contact Information</h2>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label>Name of the <b><i>Primary</i></b> 24-Hour Emergency Contact  *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Primary</i></b> Contact address Line 1</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Primary</i></b> Contact address Line 2</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h3 align="center">Telephone</h3>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Primary Phone Number 1</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Primary Phone Number 2</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Primary</i></b> Phone Number 3</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Primary</i></b> Phone Number 4</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label>Name of the <b> <i>Alternative</i> </b> 24-Hour Emergency Contact  *</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Contact address Line 1</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Contact address Line 2</label>
+                        <input id="address" name="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h3 align="center">Telephone</h3>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Phone Number 1</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Phone Number 2</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Phone Number 3</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label><b><i>Alternative</i></b> Phone Number 4</label>
+                        <input id="city" name="city" type="text" class="form-control ">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="footer">
+        <div class="pull-right">
+          10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+          <strong>Copyright</strong> Example Company &copy; 2014-2015
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+<!-- Steps -->
+<script src="js/plugins/staps/jquery.steps.min.js"></script>
+<!-- Jquery Validate -->
+<script src="js/plugins/validate/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#wizard").steps();
+  $("#form").steps({
+    bodyTag: "fieldset",
+    onStepChanging: function (event, currentIndex, newIndex) {
+      // Always allow going backward even if the current step contains invalid fields!
+      if (currentIndex > newIndex) {
+        return true;
+      }
+      // Forbid suppressing "Warning" step if the user is to young
+      if (newIndex === 3 && Number($("#age").val()) < 18) {
+        return false;
+      }
+      var form = $(this);
+      // Clean up if user went backward before
+      if (currentIndex < newIndex) {
+        // To remove error styles
+        $(".body:eq(" + newIndex + ") label.error", form).remove();
+        $(".body:eq(" + newIndex + ") .error", form).removeClass("error");
+      }
+      // Disable validation on fields that are disabled or hidden.
+      form.validate().settings.ignore = ":disabled,:hidden";
+      // Start validation; Prevent going forward if false
+      return form.valid();
+    },
+    onStepChanged: function (event, currentIndex, priorIndex) {
+      // Suppress (skip) "Warning" step if the user is old enough.
+      if (currentIndex === 2 && Number($("#age").val()) >= 18) {
+        $(this).steps("next");
+      }
+      // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+      if (currentIndex === 2 && priorIndex === 3) {
+        $(this).steps("previous");
+      }
+    },
+    onFinishing: function (event, currentIndex) {
+      var form = $(this);
+      form.validate().settings.ignore = ":disabled";
+      return form.valid();
+    },
+    onFinished: function (event, currentIndex) {
+      var form = $(this);
+      form.submit();
+    }
+  }).validate({
+    errorPlacement: function (error, element) {
+      element.before(error);
+    },
+    rules: {
+      confirm: {
+        equalTo: "#password"
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
